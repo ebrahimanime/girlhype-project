@@ -52,4 +52,10 @@ eval(__webpack_require__.ts("\n\nif (false) {} else {\n  module.exports = __webp
 /***/ })
 
 },
-/******/ function(__webpack_require__) { // webpackRun
+/******/ function(__webpack_require__) { // webpackRuntimeModules
+/******/ var __webpack_exec__ = function(moduleId) { return __webpack_require__(__webpack_require__.s = moduleId); }
+/******/ __webpack_require__.O(0, ["main-app"], function() { return __webpack_exec__("(app-pages-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=C%3A%5CUsers%5Cliqui%5CDesktop%5Cgirlhype-project%5Csrc%5Capp%5Cregister%5Cpage.js&server=false!"); });
+/******/ var __webpack_exports__ = __webpack_require__.O();
+/******/ _N_E = __webpack_exports__;
+/******/ }
+]);
