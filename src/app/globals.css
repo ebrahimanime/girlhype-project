@@ -1,0 +1,73 @@
+/* globals.css */
+
+/* 1. Import Tailwind base styles */
+@tailwind base;
+
+/* 2. Import Tailwind components */
+@tailwind components;
+
+/* 3. Import Tailwind utilities */
+@tailwind utilities;
+
+/* 4. Custom global styles */
+:root {
+  --color-bg: #0f0f0f;
+  --color-text: #f1f1f1;
+  --color-accent: #2563eb; /* Tailwind blue-600 */
+  --font-base: 'Inter', sans-serif;
+}
+
+/* Apply global defaults */
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-base);
+  line-height: 1.6;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Links */
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Utility helpers */
+.text-shadow {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.card {
+  @apply bg-white dark:bg-gray-800 p-4 rounded-2xl shadow-md transition-all;
+}
+
+.btn-primary {
+  @apply bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg;
+}
+
+.container {
+  @apply max-w-7xl mx-auto px-4;
+}
+ 
