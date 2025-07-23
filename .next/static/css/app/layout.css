@@ -14,6 +14,9 @@ html, body {
   overflow: hidden;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+.container {
+  width: 100%;
+}
 .mx-auto {
   margin-inline: auto;
 }
@@ -34,6 +37,10 @@ html, body {
 }
 .justify-center {
   justify-content: center;
+}
+.border {
+  border-style: var(--tw-border-style);
+  border-width: 1px;
 }
 .border-2 {
   border-style: var(--tw-border-style);
