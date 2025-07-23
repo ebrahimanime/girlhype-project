@@ -1,0 +1,81 @@
+/* Login.module.css */
+
+.pageWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom right, #6b21a8, #ec4899);
+}
+
+.loginContainer {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  max-width: 400px;
+  width: 100%;
+}
+
+.loginTitle {
+  text-align: center;
+  font-size: 2rem;
+  color: #6b21a8;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+.inputField {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: 1px solid #cccccc;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  outline: none;
+  margin-top: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.inputField:focus {
+  border-color: #9333ea;
+}
+
+.errorMessage {
+  color: red;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+.loginButton {
+  width: 100%;
+  padding: 0.6rem 1rem;
+  background-color: #9333ea;
+  color: white;
+  border: none;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.loginButton:hover {
+  background-color: #7e22ce;
+}
+
+.loginFooter {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.link {
+  color: #6b21a8;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
