@@ -1,0 +1,86 @@
+/*!********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/app/register/register.module.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************/
+.register_registerSection__g4mJR {
+  min-height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to right, #ffe4e6, #fbcfe8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.register_loginLink__prkOq {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: #be185d; /* pink-700 */
+  text-align: center;
+}
+
+.register_loginLink__prkOq a {
+  color: #db2777; /* pink-600 */
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.register_loginLink__prkOq a:hover {
+  color: #9d174d; /* darker pink on hover */
+}
+
+
+.register_registerContainer__VqCE7 {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+.register_heading__zHmE2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #be185d;
+}
+
+.register_formGroup__qYZWe {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.register_formGroup__qYZWe label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #be185d;
+}
+
+.register_formGroup__qYZWe input {
+  padding: 0.75rem;
+  border: 1px solid #db2777;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+.register_submitButton__3DXna {
+  background-color: #be185d;
+  color: white;
+  padding: 0.75rem;
+  width: 100%;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.register_submitButton__3DXna:hover {
+  background-color: #db2777;
+}
