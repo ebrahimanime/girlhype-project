@@ -1,0 +1,56 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  font-family: sans-serif;
+}
+
+
+
+.navbarSection {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.center .navItem,
+.right .navItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.8rem;
+  color: #444;
+}
+
+.icon {
+  font-size: 1.5rem;
+}
+
+.facebookLogo {
+  font-size: 2rem;
+  color: #1877f2;
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  background: #f0f2f5;
+  padding: 0.2rem 0.5rem;
+  border-radius: 999px;
+}
+
+.searchBar input {
+  border: none;
+  background: transparent;
+  margin-left: 0.5rem;
+  outline: none;
+}
+
+.navItem span {
+  font-size: 0.7rem;
+}
+
+
