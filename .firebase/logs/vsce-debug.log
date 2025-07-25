@@ -1,0 +1,45 @@
+[debug] [2025-07-24T12:33:01.763Z] [Firebase Plugin] Activating Firebase extension.
+[debug] [2025-07-24T12:33:14.517Z] [Firebase Plugin] requireAuthWrapper
+[debug] [2025-07-24T12:33:14.523Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-24T12:33:14.524Z] > authorizing via signed-in user (thembalihlen1@gmail.com)
+[debug] [2025-07-24T12:33:14.533Z] Checked if tokens are valid: false, expires at: 1753356706404
+[debug] [2025-07-24T12:33:14.534Z] Checked if tokens are valid: false, expires at: 1753356706404
+[debug] [2025-07-24T12:33:14.534Z] > refreshing access token with scopes: []
+[debug] [2025-07-24T12:33:14.540Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-07-24T12:33:14.540Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-07-24T12:33:14.576Z] [Firebase Plugin] VSCode notification server listening on port 40001
+[info] [Firebase Plugin] Starting Data Connect toolkit (version 2.10.1) on port 50001
+[debug] [2025-07-24T12:33:15.921Z] I0724 14:33:15.898588   20588 control.go:84] [/emulator/girlhype-project 0e36] UpdateResources(): done
+Schema: sources: schema\schema.gql [2140B] 
+Connector "default": sources: connector\queries.gql [1880B] connector\mutations.gql [1266B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0724 14:33:15.898588   20588 control.go:84] [/emulator/girlhype-project 0e36] UpdateResources(): done\nSchema: sources: schema\\schema.gql [2140B] \nConnector \"default\": sources: connector\\queries.gql [1880B] connector\\mutations.gql [1266B] \n"}}
+[debug] [2025-07-24T12:33:15.923Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"dataconnect"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2025-07-24T12:33:15.923Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"dataconnect"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2025-07-24T12:33:15.924Z] Starting Data Connect Emulator with command {"binary":"C:\\Users\\themb\\.cache\\firebase\\emulators\\dataconnect-emulator-2.10.1.exe","args":["--logtostderr","-v=2","dev","--listen=localhost:50001","--config_dir=c:\\Users\\themb\\OneDrive\\Documents\\GitHub\\girlhype-project\\dataconnect","--enable_output_schema_extensions=true","--enable_output_generated_sdk=true"],"optionalArgs":["listen","config_dir","enable_output_schema_extensions","enable_output_generated_sdk"],"joinArgs":true,"shell":false,"port":9399} {"metadata":{"emulator":{"name":"dataconnect"},"message":"Starting Data Connect Emulator with command {\"binary\":\"C:\\\\Users\\\\themb\\\\.cache\\\\firebase\\\\emulators\\\\dataconnect-emulator-2.10.1.exe\",\"args\":[\"--logtostderr\",\"-v=2\",\"dev\",\"--listen=localhost:50001\",\"--config_dir=c:\\\\Users\\\\themb\\\\OneDrive\\\\Documents\\\\GitHub\\\\girlhype-project\\\\dataconnect\",\"--enable_output_schema_extensions=true\",\"--enable_output_generated_sdk=true\"],\"optionalArgs\":[\"listen\",\"config_dir\",\"enable_output_schema_extensions\",\"enable_output_generated_sdk\"],\"joinArgs\":true,\"shell\":false,\"port\":9399}"}}
+[info] i  dataconnect: Data Connect Emulator logging to dataconnect-debug.log {"metadata":{"emulator":{"name":"dataconnect"},"message":"Data Connect Emulator logging to \u001b[1mdataconnect-debug.log\u001b[22m"}}
+[debug] [2025-07-24T12:33:16.028Z] I0724 14:33:15.993512   17684 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0724 14:33:15.993512   17684 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2025-07-24T12:33:16.373Z] I0724 14:33:16.307565   17684 control.go:84] [/emulator/girlhype-project a963] UpdateResources(): done
+Schema: sources: schema\schema.gql [2140B] 
+Connector "default": sources: connector\mutations.gql [1266B] connector\queries.gql [1880B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0724 14:33:16.307565   17684 control.go:84] [/emulator/girlhype-project a963] UpdateResources(): done\nSchema: sources: schema\\schema.gql [2140B] \nConnector \"default\": sources: connector\\mutations.gql [1266B] connector\\queries.gql [1880B] \n"}}
+[debug] [2025-07-24T12:33:16.432Z] I0724 14:33:16.374220   17684 codegen.go:82] [connector "default" javascriptSdk] Generating sources into "c:\\Users\\themb\\OneDrive\\Documents\\GitHub\\girlhype-project\\dataconnect-generated\\js\\default-connector"
+I0724 14:33:16.394916   17684 collector.go:107] schema extensions wrote into "c:\\Users\\themb\\OneDrive\\Documents\\GitHub\\girlhype-project\\dataconnect\\.dataconnect\\schema"
+Generated sources: prelude.gql [73172B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0724 14:33:16.374220   17684 codegen.go:82] [connector \"default\" javascriptSdk] Generating sources into \"c:\\\\Users\\\\themb\\\\OneDrive\\\\Documents\\\\GitHub\\\\girlhype-project\\\\dataconnect-generated\\\\js\\\\default-connector\"\nI0724 14:33:16.394916   17684 collector.go:107] schema extensions wrote into \"c:\\\\Users\\\\themb\\\\OneDrive\\\\Documents\\\\GitHub\\\\girlhype-project\\\\dataconnect\\\\.dataconnect\\\\schema\"\nGenerated sources: prelude.gql [73172B] \n"}}
+[debug] [2025-07-24T12:33:16.445Z] I0724 14:33:16.434514   17684 collector.go:107] connector "default" javascriptSdk wrote into "c:\\Users\\themb\\OneDrive\\Documents\\GitHub\\girlhype-project\\dataconnect-generated\\js\\default-connector"
+Generated sources: react\README.md [5474B] esm\index.esm.js [119B] package.json [860B] react\index.d.ts [228B] react\package.json [468B] react\esm\package.json [17B] react\esm\index.esm.js [0B] index.d.ts [248B] esm\package.json [17B] index.cjs.js [154B] README.md [2896B] react\index.cjs.js [0B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0724 14:33:16.434514   17684 collector.go:107] connector \"default\" javascriptSdk wrote into \"c:\\\\Users\\\\themb\\\\OneDrive\\\\Documents\\\\GitHub\\\\girlhype-project\\\\dataconnect-generated\\\\js\\\\default-connector\"\nGenerated sources: react\\README.md [5474B] esm\\index.esm.js [119B] package.json [860B] react\\index.d.ts [228B] react\\package.json [468B] react\\esm\\package.json [17B] react\\esm\\index.esm.js [0B] index.d.ts [248B] esm\\package.json [17B] index.cjs.js [154B] README.md [2896B] react\\index.cjs.js [0B] \n"}}
+[debug] [2025-07-24T12:33:16.537Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-07-24T12:33:16.538Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-07-24T12:33:16.603Z] [Firebase Plugin] User found:  thembalihlen1@gmail.com
+[info] [Firebase Plugin] (Core:Project) New user detected, fetching projects
+[debug] [2025-07-24T12:33:16.606Z] Checked if tokens are valid: true, expires at: 1753363995539
+[debug] [2025-07-24T12:33:16.614Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=1000
+[debug] [2025-07-24T12:33:16.686Z] I0724 14:33:16.618719   17684 installsdk.go:55] Package @firebasegen/default-connector is already installed. Skipping installation
+I0724 14:33:16.618719   17684 load.go:115] Finished reloading
+I0724 14:33:16.681230   17684 dev.go:95] Listening on address (HTTP + gRPC): 127.0.0.1:50001
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0724 14:33:16.618719   17684 installsdk.go:55] Package @firebasegen/default-connector is already installed. Skipping installation\nI0724 14:33:16.618719   17684 load.go:115] Finished reloading\nI0724 14:33:16.681230   17684 dev.go:95] Listening on address (HTTP + gRPC): 127.0.0.1:50001\n"}}
+[error] [Firebase Plugin] error:  {}
+[debug] [2025-07-24T12:33:17.473Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2025-07-24T12:33:17.473Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
