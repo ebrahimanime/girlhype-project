@@ -8,31 +8,52 @@
   font-family: sans-serif;
 }
 
-
-
 .navbarSection {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
-.center .navItem,
-.right .navItem {
+/* Center and Right nav items */
+.navbarSection.center .navItem,
+.navbarSection.right .navItem {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: 0.8rem;
   color: #444;
+  transition: color 0.3s ease;
+}
+
+.navItem {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.navItem:hover {
+  color: #1877f2;
 }
 
 .icon {
   font-size: 1.5rem;
+  transition: color 0.3s ease;
 }
 
-.facebookLogo {
-  font-size: 2rem;
-  color: #1877f2;
+.navItem:hover .icon {
+  color: #000; /* Icon turns black on hover */
 }
+
+/* Unique icon colors */
+.home .icon { color: #1877f2; }
+.watch .icon { color: #f02849; }
+.marketplace .icon { color: #45bd62; }
+.groups .icon { color: #f7b928; }
+.create .icon { color: #a626d3; }
+
+.profile .icon { color: #1877f2; }
+.messenger .icon { color: #00b2ff; }
+.notifications .icon { color: #fa3e3e; }
+.more .icon { color: #606770; }
 
 .searchBar {
   display: flex;
@@ -52,5 +73,3 @@
 .navItem span {
   font-size: 0.7rem;
 }
-
-

@@ -11,31 +11,52 @@
   font-family: sans-serif;
 }
 
-
-
 .Navbar_navbarSection__vtDJJ {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
-.Navbar_center__3FQ_o .Navbar_navItem__GWN7x,
-.Navbar_right__hREN_ .Navbar_navItem__GWN7x {
+/* Center and Right nav items */
+.Navbar_navbarSection__vtDJJ.Navbar_center__3FQ_o .Navbar_navItem__GWN7x,
+.Navbar_navbarSection__vtDJJ.Navbar_right__hREN_ .Navbar_navItem__GWN7x {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: 0.8rem;
   color: #444;
+  transition: color 0.3s ease;
+}
+
+.Navbar_navItem__GWN7x {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.Navbar_navItem__GWN7x:hover {
+  color: #1877f2;
 }
 
 .Navbar_icon__ZWGIh {
   font-size: 1.5rem;
+  transition: color 0.3s ease;
 }
 
-.Navbar_facebookLogo__08ERv {
-  font-size: 2rem;
-  color: #1877f2;
+.Navbar_navItem__GWN7x:hover .Navbar_icon__ZWGIh {
+  color: #000; /* Icon turns black on hover */
 }
+
+/* Unique icon colors */
+.Navbar_home__5nSdr .Navbar_icon__ZWGIh { color: #1877f2; }
+.Navbar_watch__SVZLz .Navbar_icon__ZWGIh { color: #f02849; }
+.Navbar_marketplace__QEwdq .Navbar_icon__ZWGIh { color: #45bd62; }
+.Navbar_groups__cRj10 .Navbar_icon__ZWGIh { color: #f7b928; }
+.Navbar_create__xHNow .Navbar_icon__ZWGIh { color: #a626d3; }
+
+.Navbar_profile__IHx_M .Navbar_icon__ZWGIh { color: #1877f2; }
+.Navbar_messenger__oXa2k .Navbar_icon__ZWGIh { color: #00b2ff; }
+.Navbar_notifications__qJM0A .Navbar_icon__ZWGIh { color: #fa3e3e; }
+.Navbar_more__ymAnG .Navbar_icon__ZWGIh { color: #606770; }
 
 .Navbar_searchBar__Hfvhq {
   display: flex;
@@ -55,6 +76,4 @@
 .Navbar_navItem__GWN7x span {
   font-size: 0.7rem;
 }
-
-
 
