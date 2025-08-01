@@ -63,8 +63,9 @@ export default function LoginPage() {
               className={styles.inputField}
             />
           </div>
-
+           
           <button type="submit" className={styles.loginButton}>Log In</button>
+          
         </form>
 
         <p className={styles.loginFooter}>

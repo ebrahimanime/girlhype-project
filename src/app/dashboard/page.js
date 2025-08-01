@@ -1,4 +1,9 @@
-// Feed Page
-export default function FeedPage() {
-  return <div>Feed</div>;
+import React from 'react'
+
+const page = () => {
+  return (
+    <div>page</div>
+  )
 }
+
+export default page
