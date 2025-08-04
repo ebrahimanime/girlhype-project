@@ -2,8 +2,16 @@
 
 import React, { useState } from 'react';
 import {
-  FaHome, FaTv, FaStore, FaUsers, FaPlus,
-  FaUserCircle, FaCommentDots, FaBell, FaSignOutAlt, FaBars
+  FaHome,
+  FaTv,
+  FaStore,
+  FaUsers,
+  FaPlus,
+  FaUserCircle,
+  FaCommentDots,
+  FaBell,
+  FaSignOutAlt,
+  FaBars
 } from 'react-icons/fa';
 import styles from '../styles/Sidebar.module.css';
 import Link from 'next/link';
@@ -12,15 +20,15 @@ const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(true);
 
   const menuItems = [
-    { label: 'Home', icon: <FaHome />, path: '/home' },
-    { label: 'Watch', icon: <FaTv />, path: '/watch' },
-    { label: 'Marketplace', icon: <FaStore />, path: '/marketplace' },
-    { label: 'Groups', icon: <FaUsers />, path: '/groups' },
-    { label: 'Create', icon: <FaPlus />, path: '/create' },
-    { label: 'Profile', icon: <FaUserCircle />, path: '/profile' },
-    { label: 'Messenger', icon: <FaCommentDots />, path: '/messenger' },
-    { label: 'Notifications', icon: <FaBell />, path: '/notifications' },
-    { label: 'Logout', icon: <FaSignOutAlt />, path: '/logout' },
+    { label: 'Home', icon: <FaHome />, path: '/dashboard/home' },
+    { label: 'Watch', icon: <FaTv />, path: '/dashboard/watch' },
+    { label: 'Marketplace', icon: <FaStore />, path: '/dashboard/marketplace' },
+    { label: 'Groups', icon: <FaUsers />, path: '/dashboard/groups' },
+    { label: 'Create', icon: <FaPlus />, path: '/dashboard/create' },
+    { label: 'Profile', icon: <FaUserCircle />, path: '/dashboard/profile' },
+    { label: 'Messenger', icon: <FaCommentDots />, path: '/dashboard/messenger' },
+    { label: 'Notifications', icon: <FaBell />, path: '/dashboard/notifications' },
+    { label: 'Logout', icon: <FaSignOutAlt />, path: '/dashboard/logout' },
   ];
 
   return (

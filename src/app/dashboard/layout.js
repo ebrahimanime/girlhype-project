@@ -1,13 +1,19 @@
-// Dashboard layout
+'use client'
 import Navbar from '../../components/Navbar';
 import Sidebar from '../../components/Sidebar';
+import styles from '../../styles/Layout.module.css';
+
 
 export default function DashboardLayout({ children }) {
   return (
-    <div>
+    <div className={styles.dashboardContainer}>
       <Navbar />
-      <Sidebar />
-      <main>{children}</main>
+      <div className={styles.mainContent}>
+        <Sidebar />
+        <div className={styles.pageContent}>
+          {children}
+        </div>
+      </div>
     </div>
   );
 }
