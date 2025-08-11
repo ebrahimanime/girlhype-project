@@ -2,9 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-// import { signInWithEmailAndPassword } from 'firebase/auth';
-// import { auth } from '../../../firebase/config';
-// import { useAuth } from '@/components/AuthProvider';
+
 
 import styles from './Login.module.css'; // ✅ import CSS module
 

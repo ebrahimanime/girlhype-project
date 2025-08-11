@@ -8,11 +8,14 @@
     "start": "next start"
   },
   "dependencies": {
-    "@firebasegen/default-connector": "file:dataconnect-generated/js/default-connector",
     "@tailwindcss/vite": "^4.1.11",
-    "firebase": "^10.14.1",
+    "bcrypt": "^6.0.0",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
     "lucide-react": "^0.525.0",
-    "next": "^15.4.2-canary.19",
+    "mongoose": "^8.17.1",
+    "next": "^15.4.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.5.0"
@@ -22,5 +25,18 @@
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.6",
     "tailwindcss": "^4.1.11"
-  }
+  },
+  "description": "A Next.js Firebase social platform.",
+  "main": "next.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ebrahimanime/girlhype-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ebrahimanime/girlhype-project/issues"
+  },
+  "homepage": "https://github.com/ebrahimanime/girlhype-project#readme"
 }
