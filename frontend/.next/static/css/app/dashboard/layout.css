@@ -1,0 +1,174 @@
+/*!************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[5].use[3]!./src/styles/Navbar.module.css ***!
+  \************************************************************************************************************************************************************************************************************************************************************************/
+.Navbar_navbar__2GufN {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  font-family: sans-serif;
+}
+
+.Navbar_navbarSection__vtDJJ {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Center and Right nav items */
+.Navbar_navbarSection__vtDJJ.Navbar_center__3FQ_o .Navbar_navItem__GWN7x,
+.Navbar_navbarSection__vtDJJ.Navbar_right__hREN_ .Navbar_navItem__GWN7x {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.8rem;
+  color: #444;
+  transition: color 0.3s ease;
+}
+
+.Navbar_navItem__GWN7x {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.Navbar_navItem__GWN7x:hover {
+  color: #1877f2;
+}
+
+.Navbar_icon__ZWGIh {
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.Navbar_navItem__GWN7x:hover .Navbar_icon__ZWGIh {
+  color: #000; /* Icon turns black on hover */
+}
+
+/* Unique icon colors */
+.Navbar_home__5nSdr .Navbar_icon__ZWGIh { color: #1877f2; }
+.Navbar_watch__SVZLz .Navbar_icon__ZWGIh { color: #f02849; }
+.Navbar_marketplace__QEwdq .Navbar_icon__ZWGIh { color: #45bd62; }
+.Navbar_groups__cRj10 .Navbar_icon__ZWGIh { color: #f7b928; }
+.Navbar_create__xHNow .Navbar_icon__ZWGIh { color: #a626d3; }
+
+.Navbar_profile__IHx_M .Navbar_icon__ZWGIh { color: #1877f2; }
+.Navbar_messenger__oXa2k .Navbar_icon__ZWGIh { color: #00b2ff; }
+.Navbar_notifications__qJM0A .Navbar_icon__ZWGIh { color: #fa3e3e; }
+.Navbar_more__ymAnG .Navbar_icon__ZWGIh { color: #606770; }
+
+.Navbar_searchBar__Hfvhq {
+  display: flex;
+  align-items: center;
+  background: #f0f2f5;
+  padding: 0.2rem 0.5rem;
+  border-radius: 999px;
+}
+
+.Navbar_searchBar__Hfvhq input {
+  border: none;
+  background: transparent;
+  margin-left: 0.5rem;
+  outline: none;
+}
+
+.Navbar_navItem__GWN7x span {
+  font-size: 0.7rem;
+}
+
+/*!*************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[5].use[3]!./src/styles/Sidebar.module.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************/
+.Sidebar_sidebar__oTTpu {
+  height: 100vh;
+  background-color: #fff;
+  border-right: 1px solid #ddd;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
+  transition: width 0.3s ease;
+  overflow-x: hidden;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.Sidebar_open__0s4q8 {
+  width: 220px;
+}
+
+.Sidebar_closed__SlKC6 {
+  width: 60px;
+}
+
+.Sidebar_header__Dwr6m {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.Sidebar_title__lY9dG {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.Sidebar_toggle__lRxR4 {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.Sidebar_menu__V39Nh {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 0;
+}
+
+.Sidebar_menuItem__dL1mN {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  color: #444;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.Sidebar_menuItem__dL1mN:hover {
+  background-color: #f0f2f5;
+}
+
+.Sidebar_icon__FxyHC {
+  font-size: 1.2rem; 
+  margin-right: 1rem;
+}
+
+.Sidebar_label__dFBWi {
+  font-size: 0.95rem;
+}
+
+/*!************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[5].use[3]!./src/styles/Layout.module.css ***!
+  \************************************************************************************************************************************************************************************************************************************************************************/
+.Layout_dashboardContainer__vhWsJ {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+
+.Layout_mainContent__FnV3k {
+  display: flex;
+  flex: 1 1;
+}
+
+
+.Layout_pageContent__AAyV0 {
+  flex: 1 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+
+

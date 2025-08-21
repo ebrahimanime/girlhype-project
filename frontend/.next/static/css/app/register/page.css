@@ -1,0 +1,108 @@
+/*!********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[5].use[3]!./src/app/register/Register.module.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************/
+.Register_registerSection__F2h_c {
+  min-height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to right, #ffe4e6, #fbcfe8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.Register_loginLink__RQoqq {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: #be185d; /* pink-700 */
+  text-align: center;
+}
+
+.Register_loginLink__RQoqq a {
+  color: #db2777; /* pink-600 */
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.Register_loginLink__RQoqq a:hover {
+  color: #9d174d; /* darker pink on hover */
+}
+
+.Register_registerContainer__x2_LI {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+.Register_heading__S78_t {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #be185d;
+}
+
+.Register_formGroup__CvuC1 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.Register_formGroup__CvuC1 label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #be185d;
+  line-height: 1.3;
+}
+
+.Register_formGroup__CvuC1 input {
+  padding: 0.75rem;
+  border: 1px solid #db2777;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.Register_formGroup__CvuC1 input:focus {
+  outline: 3px solid #f9a8d4; /* lighter pink focus ring */
+  outline-offset: 2px;
+  border-color: #f9a8d4;
+}
+
+.Register_submitButton__2aTZQ {
+  background-color: #be185d;
+  color: white;
+  padding: 0.75rem;
+  width: 100%;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.Register_submitButton__2aTZQ:hover {
+  background-color: #db2777;
+  box-shadow: 0 4px 8px rgba(219, 39, 119, 0.4);
+  transform: translateY(-2px);
+}
+
+.Register_submitButton__2aTZQ:focus {
+  outline: 3px solid #f9a8d4;
+  outline-offset: 2px;
+}
+
+@media (max-width: 350px) {
+  .Register_registerContainer__x2_LI {
+    padding: 1rem;
+  }
+}
+
