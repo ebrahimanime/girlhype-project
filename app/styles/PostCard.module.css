@@ -1,0 +1,254 @@
+.postCard {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.postHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.authorInfo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.authorDetails {
+  flex: 1;
+}
+
+.authorName {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+}
+
+.postDate {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.deleteBtn {
+  padding: 6px 8px;
+  border-radius: 6px;
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 16px;
+  transition: var(--transition);
+}
+
+.deleteBtn:hover {
+  background: #fee;
+  color: #dc2626;
+}
+
+.postContent {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  color: var(--text-primary);
+  font-size: 16px;
+}
+
+.postStats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.postActions {
+  display: flex;
+  justify-content: space-around;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.actionBtn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: var(--border-radius);
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 14px;
+  font-weight: 500;
+  transition: var(--transition);
+  flex: 1;
+  justify-content: center;
+}
+
+.actionBtn:hover {
+  background: var(--background-light);
+}
+
+.actionBtn.liked {
+  color: #e53e3e;
+}
+
+.commentsSection {
+  margin-top: 15px;
+}
+
+.commentForm {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.commentForm .avatar {
+  width: 32px;
+  height: 32px;
+  font-size: 14px;
+}
+
+.commentInputContainer {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  background: var(--background-light);
+  border-radius: 20px;
+  padding: 8px 15px;
+}
+
+.commentInput {
+  flex: 1;
+  background: none;
+  border: none;
+  outline: none;
+  color: var(--text-primary);
+  font-size: 14px;
+}
+
+.commentInput::placeholder {
+  color: var(--text-secondary);
+}
+
+.commentSubmit {
+  background: none;
+  border: none;
+  color: var(--primary-color);
+  font-size: 16px;
+  cursor: pointer;
+  padding: 0 5px;
+  transition: var(--transition);
+}
+
+.commentSubmit:hover {
+  color: var(--primary-hover);
+}
+
+.commentSubmit:disabled {
+  color: var(--text-secondary);
+  cursor: not-allowed;
+}
+
+.comments {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.comment {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.comment .avatar {
+  width: 32px;
+  height: 32px;
+  font-size: 14px;
+}
+
+.commentContent {
+  flex: 1;
+}
+
+.commentBubble {
+  background: var(--background-light);
+  padding: 10px 15px;
+  border-radius: 16px;
+  margin-bottom: 5px;
+}
+
+.commentAuthor {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+}
+
+.commentBubble p {
+  font-size: 14px;
+  color: var(--text-primary);
+  line-height: 1.4;
+}
+
+.commentActions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-left: 15px;
+}
+
+.commentAction {
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.commentAction:hover {
+  color: var(--text-primary);
+}
+
+.commentTime {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.noComments {
+  text-align: center;
+  color: var(--text-secondary);
+  font-style: italic;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .postActions {
+    flex-wrap: wrap;
+  }
+  
+  .actionBtn {
+    flex: none;
+    min-width: 80px;
+  }
+}

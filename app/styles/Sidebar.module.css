@@ -1,0 +1,148 @@
+.sidebar {
+  width: 280px;
+  background: var(--background-white);
+  border-right: 1px solid var(--border-color);
+  height: calc(100vh - 60px);
+  position: fixed;
+  left: 0;
+  top: 60px;
+  overflow-y: auto;
+  transition: var(--transition);
+  z-index: 100;
+}
+
+.collapsed {
+  width: 80px;
+}
+
+.sidebarContent {
+  padding: 20px 0;
+}
+
+.userSection {
+  padding: 0 20px 20px;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 20px;
+}
+
+.collapsed .userSection {
+  padding: 0 15px 20px;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
+.userDetails h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+}
+
+.userDetails p {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.collapsed .userDetails {
+  display: none;
+}
+
+.navigation {
+  padding: 0 10px;
+}
+
+.navItem {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 10px;
+  border-radius: var(--border-radius);
+  background: none;
+  border: none;
+  color: var(--text-primary);
+  font-size: 14px;
+  font-weight: 500;
+  transition: var(--transition);
+  margin-bottom: 4px;
+}
+
+.navItem:hover {
+  background: var(--background-light);
+}
+
+.navIcon {
+  font-size: 20px;
+  width: 24px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.collapsed .navLabel {
+  display: none;
+}
+
+.shortcuts {
+  padding: 20px 10px 0;
+  border-top: 1px solid var(--border-color);
+  margin-top: 20px;
+}
+
+.shortcutsTitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-bottom: 15px;
+  padding: 0 10px;
+}
+
+.collapsed .shortcutsTitle {
+  display: none;
+}
+
+.shortcutItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 10px;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: var(--transition);
+  margin-bottom: 4px;
+}
+
+.shortcutItem:hover {
+  background: var(--background-light);
+}
+
+.collapsed .shortcuts {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    transform: translateX(-100%);
+  }
+  
+  .sidebar.open {
+    transform: translateX(0);
+  }
+}

@@ -1,0 +1,112 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #ef1ed6 0%, #764ba2 100%);
+  padding: 20px;
+}
+
+.content {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.leftSide {
+  color: white;
+}
+
+.logo h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.tagline {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  opacity: 0.95;
+  font-weight: 400;
+}
+
+.rightSide {
+  display: flex;
+  justify-content: center;
+}
+
+.loginCard {
+  background: var(--background-white);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.loginBtn {
+  width: 100%;
+  font-size: 16px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+.divider {
+  text-align: center;
+  margin: 20px 0;
+  position: relative;
+  color: var(--text-secondary);
+}
+
+.divider::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: var(--border-color);
+  z-index: 1;
+}
+
+.divider span {
+  background: var(--background-white);
+  padding: 0 15px;
+  position: relative;
+  z-index: 2;
+}
+
+.registerBtn {
+  width: 100%;
+  font-size: 16px;
+  padding: 16px;
+}
+
+@media (max-width: 768px) {
+  .content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+  
+  .logo h1 {
+    font-size: 3rem;
+  }
+  
+  .tagline {
+    font-size: 1.2rem;
+  }
+  
+  .loginCard {
+    padding: 30px 20px;
+  }
+}
