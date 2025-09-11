@@ -1,0 +1,114 @@
+.createPost {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.userInfo h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 15px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  background: var(--background-light);
+  color: var(--text-primary);
+  font-size: 16px;
+  font-family: inherit;
+  resize: vertical;
+  transition: var(--transition);
+  margin-bottom: 15px;
+}
+
+.textarea:focus {
+  background: var(--background-white);
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(24, 119, 242, 0.2);
+}
+
+.textarea::placeholder {
+  color: var(--text-secondary);
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.postOptions {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.optionBtn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: var(--border-radius);
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 14px;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.optionBtn:hover {
+  background: var(--background-light);
+  color: var(--text-primary);
+}
+
+.postBtn {
+  padding: 10px 24px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .postOptions {
+    justify-content: center;
+  }
+  
+  .postBtn {
+    width: 100%;
+  }
+}
