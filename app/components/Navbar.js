@@ -11,13 +11,23 @@ export default function Navbar({ user, darkMode, onToggleDarkMode, onToggleSideb
 
   const handleSearch = (e) => {
     e.preventDefault()
-    // Implement search functionality
     console.log('Searching for:', searchQuery)
+  }
+
+  // ✅ Dark mode handler
+  const handleToggleDarkMode = () => {
+    if (darkMode) {
+      document.body.classList.remove('dark-mode')
+    } else {
+      document.body.classList.add('dark-mode')
+    }
+    onToggleDarkMode()
   }
 
   return (
     <nav className={styles.navbar}>
       <div className={styles.navContent}>
+        {/* Left Section */}
         <div className={styles.leftSection}>
           <button 
             className={styles.menuToggle}
@@ -34,6 +44,7 @@ export default function Navbar({ user, darkMode, onToggleDarkMode, onToggleSideb
           </div>
         </div>
 
+        {/* Search Bar */}
         <div className={styles.centerSection}>
           <form onSubmit={handleSearch} className={styles.searchForm}>
             <div className={styles.searchContainer}>
@@ -51,15 +62,18 @@ export default function Navbar({ user, darkMode, onToggleDarkMode, onToggleSideb
           </form>
         </div>
 
+        {/* Right Section */}
         <div className={styles.rightSection}>
+          {/* ✅ Dark/Light Button */}
           <button 
             className={styles.themeToggle}
-            onClick={onToggleDarkMode}
+            onClick={handleToggleDarkMode}
             aria-label="Toggle dark mode"
           >
             {darkMode ? '☀️' : '🌙'}
           </button>
 
+          {/* Profile Dropdown */}
           <div className={styles.profileSection}>
             <button 
               className={styles.profileButton}
