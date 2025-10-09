@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 // File: C:\Users\keleb\OneDrive\Documents\GitHub\girlhype-project\app\layout.js
-=======
-// File: C:\Users\themb\OneDrive\Documents\GitHub\girlhype-project\app\layout.js
->>>>>>> 119115b1ed45454d070caf44d1dc1f13acc7dd26
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
