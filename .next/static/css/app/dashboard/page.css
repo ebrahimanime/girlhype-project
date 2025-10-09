@@ -1,5 +1,5 @@
 /*!************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./app/styles/Navbar.module.css ***!
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./app/styles/Navbar.module.css ***!
   \************************************************************************************************************************************************************************************************************************************************************************/
 .Navbar_navbar__E2ggZ {
   background: var(--background-white);
@@ -35,6 +35,9 @@
   padding: 8px;
   border-radius: 6px;
   transition: var(--transition);
+  cursor: pointer;
+  background: none;
+  border: none;
 }
 
 .Navbar_menuToggle__LDwqK:hover {
@@ -85,7 +88,11 @@
 .Navbar_searchInput__n386X:focus {
   background: var(--background-white);
   border-color: var(--primary-color);
-  box-shadow: 0 0 0 2px rgba(24, 119, 242, 0.2);
+  box-shadow: 0 0 0 2px rgba(239, 30, 214, 0.2);
+}
+
+.Navbar_searchInput__n386X::placeholder {
+  color: var(--text-secondary);
 }
 
 .Navbar_searchButton___hPKU {
@@ -98,24 +105,62 @@
   font-size: 16px;
   color: var(--text-secondary);
   cursor: pointer;
+  padding: 4px;
+  border-radius: 50%;
+  transition: var(--transition);
+}
+
+.Navbar_searchButton___hPKU:hover {
+  background: var(--background-light);
+  color: var(--primary-color);
 }
 
 .Navbar_rightSection__WlNiq {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 10px;
 }
 
+/* Messages Button */
+.Navbar_messagesButton__u6Iiy {
+  padding: 8px;
+  border-radius: 50%;
+  background: var(--background-light);
+  font-size: 18px;
+  transition: var(--transition);
+  cursor: pointer;
+  border: none;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Navbar_messagesButton__u6Iiy:hover {
+  background: var(--border-color);
+  color: var(--primary-color);
+  transform: scale(1.05);
+}
+
+/* Theme Toggle */
 .Navbar_themeToggle__yTCsD {
   padding: 8px;
   border-radius: 50%;
   background: var(--background-light);
   font-size: 18px;
   transition: var(--transition);
+  cursor: pointer;
+  border: none;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .Navbar_themeToggle__yTCsD:hover {
   background: var(--border-color);
+  color: var(--primary-color);
+  transform: scale(1.05);
 }
 
 .Navbar_profileSection__7D3c4 {
@@ -130,6 +175,8 @@
   border-radius: 25px;
   background: var(--background-light);
   transition: var(--transition);
+  cursor: pointer;
+  border: none;
 }
 
 .Navbar_profileButton__p9K8T:hover {
@@ -140,7 +187,7 @@
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background: var(--primary-color);
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
   color: white;
   display: flex;
   align-items: center;
@@ -158,6 +205,11 @@
 .Navbar_dropdownArrow__MDKBp {
   font-size: 10px;
   color: var(--text-secondary);
+  transition: var(--transition);
+}
+
+.Navbar_profileButton__p9K8T:hover .Navbar_dropdownArrow__MDKBp {
+  color: var(--primary-color);
 }
 
 .Navbar_profileMenu__kCH37 {
@@ -168,9 +220,21 @@
   background: var(--background-white);
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: var(--shadow-hover);
   min-width: 200px;
   z-index: 1001;
+  animation: Navbar_slideDown__IE9ed 0.2s ease;
+}
+
+@keyframes Navbar_slideDown__IE9ed {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .Navbar_menuItem__iFdiR {
@@ -185,16 +249,40 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  cursor: pointer;
 }
 
 .Navbar_menuItem__iFdiR:hover {
   background: var(--background-light);
+  color: var(--primary-color);
 }
 
 .Navbar_menuDivider__c3dfP {
   border: none;
   border-top: 1px solid var(--border-color);
   margin: 0;
+}
+
+/* Notification badge for messages */
+.Navbar_messagesButton__u6Iiy {
+  position: relative;
+}
+
+.Navbar_messageBadge__67Zcs {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  background: var(--primary-color);
+  color: white;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  font-size: 10px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--background-white);
 }
 
 @media (max-width: 768px) {
@@ -209,9 +297,30 @@
   .Navbar_searchInput__n386X {
     font-size: 16px;
   }
+  
+  .Navbar_messagesButton__u6Iiy,
+  .Navbar_themeToggle__yTCsD {
+    padding: 6px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Navbar_navContent__TVvC_ {
+    padding: 0 15px;
+  }
+  
+  .Navbar_centerSection__9_w1k {
+    margin: 0 10px;
+  }
+  
+  .Navbar_searchInput__n386X {
+    padding: 8px 35px 8px 12px;
+    font-size: 14px;
+  }
 }
 /*!*************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./app/styles/Sidebar.module.css ***!
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./app/styles/Sidebar.module.css ***!
   \*************************************************************************************************************************************************************************************************************************************************************************/
 .Sidebar_sidebar__qoTN4 {
   width: 280px;
@@ -362,7 +471,7 @@
   }
 }
 /*!**************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./app/styles/PostCard.module.css ***!
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./app/styles/PostCard.module.css ***!
   \**************************************************************************************************************************************************************************************************************************************************************************/
 .PostCard_postCard__2f3s3 {
   padding: 20px;
@@ -619,7 +728,7 @@
   }
 }
 /*!****************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./app/styles/CreatePost.module.css ***!
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./app/styles/CreatePost.module.css ***!
   \****************************************************************************************************************************************************************************************************************************************************************************/
 .CreatePost_createPost__OCrSf {
   padding: 20px;
@@ -736,7 +845,7 @@
   }
 }
 /*!**********************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./app/styles/Feed.module.css ***!
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./app/styles/Feed.module.css ***!
   \**********************************************************************************************************************************************************************************************************************************************************************/
 .Feed_feed__CcBng {
   max-width: 680px;
@@ -791,7 +900,7 @@
   font-size: 1rem;
 }
 /*!***************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./app/styles/Dashboard.module.css ***!
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./app/styles/Dashboard.module.css ***!
   \***************************************************************************************************************************************************************************************************************************************************************************/
 .Dashboard_dashboard__f7Zlw {
   min-height: 100vh;

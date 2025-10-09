@@ -31,6 +31,9 @@
   padding: 8px;
   border-radius: 6px;
   transition: var(--transition);
+  cursor: pointer;
+  background: none;
+  border: none;
 }
 
 .menuToggle:hover {
@@ -81,7 +84,11 @@
 .searchInput:focus {
   background: var(--background-white);
   border-color: var(--primary-color);
-  box-shadow: 0 0 0 2px rgba(24, 119, 242, 0.2);
+  box-shadow: 0 0 0 2px rgba(239, 30, 214, 0.2);
+}
+
+.searchInput::placeholder {
+  color: var(--text-secondary);
 }
 
 .searchButton {
@@ -94,24 +101,62 @@
   font-size: 16px;
   color: var(--text-secondary);
   cursor: pointer;
+  padding: 4px;
+  border-radius: 50%;
+  transition: var(--transition);
+}
+
+.searchButton:hover {
+  background: var(--background-light);
+  color: var(--primary-color);
 }
 
 .rightSection {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 10px;
 }
 
+/* Messages Button */
+.messagesButton {
+  padding: 8px;
+  border-radius: 50%;
+  background: var(--background-light);
+  font-size: 18px;
+  transition: var(--transition);
+  cursor: pointer;
+  border: none;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.messagesButton:hover {
+  background: var(--border-color);
+  color: var(--primary-color);
+  transform: scale(1.05);
+}
+
+/* Theme Toggle */
 .themeToggle {
   padding: 8px;
   border-radius: 50%;
   background: var(--background-light);
   font-size: 18px;
   transition: var(--transition);
+  cursor: pointer;
+  border: none;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .themeToggle:hover {
   background: var(--border-color);
+  color: var(--primary-color);
+  transform: scale(1.05);
 }
 
 .profileSection {
@@ -126,6 +171,8 @@
   border-radius: 25px;
   background: var(--background-light);
   transition: var(--transition);
+  cursor: pointer;
+  border: none;
 }
 
 .profileButton:hover {
@@ -136,7 +183,7 @@
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background: var(--primary-color);
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
   color: white;
   display: flex;
   align-items: center;
@@ -154,6 +201,11 @@
 .dropdownArrow {
   font-size: 10px;
   color: var(--text-secondary);
+  transition: var(--transition);
+}
+
+.profileButton:hover .dropdownArrow {
+  color: var(--primary-color);
 }
 
 .profileMenu {
@@ -164,9 +216,21 @@
   background: var(--background-white);
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: var(--shadow-hover);
   min-width: 200px;
   z-index: 1001;
+  animation: slideDown 0.2s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .menuItem {
@@ -181,16 +245,40 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  cursor: pointer;
 }
 
 .menuItem:hover {
   background: var(--background-light);
+  color: var(--primary-color);
 }
 
 .menuDivider {
   border: none;
   border-top: 1px solid var(--border-color);
   margin: 0;
+}
+
+/* Notification badge for messages */
+.messagesButton {
+  position: relative;
+}
+
+.messageBadge {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  background: var(--primary-color);
+  color: white;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  font-size: 10px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--background-white);
 }
 
 @media (max-width: 768px) {
@@ -204,5 +292,26 @@
   
   .searchInput {
     font-size: 16px;
+  }
+  
+  .messagesButton,
+  .themeToggle {
+    padding: 6px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navContent {
+    padding: 0 15px;
+  }
+  
+  .centerSection {
+    margin: 0 10px;
+  }
+  
+  .searchInput {
+    padding: 8px 35px 8px 12px;
+    font-size: 14px;
   }
 }

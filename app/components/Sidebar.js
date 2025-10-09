@@ -7,13 +7,13 @@ export default function Sidebar({ collapsed, user }) {
   const router = useRouter()
 
   const menuItems = [
-    { icon: '🏠', label: 'Home', path: '/dashboard' },
+    // { icon: '🏠', label: 'Home', path: '/dashboard' },
     { icon: '👤', label: 'Profile', path: '/profile' },
     { icon: '👥', label: 'Friends', path: '/friends' },
-    { icon: '📱', label: 'Pages', path: '/pages' },
+    // { icon: '📱', label: 'Pages', path: '/pages' },
     { icon: '👥', label: 'Groups', path: '/groups' },
     
-    { icon: '📺', label: 'Watch', path: '/watch' },
+    // { icon: '📺', label: 'Watch', path: '/watch' },
     { icon: '📅', label: 'Events', path: '/events' },
     { icon: '💾', label: 'Saved', path: '/saved' },
   ]

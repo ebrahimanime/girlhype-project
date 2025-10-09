@@ -1,4 +1,4 @@
-// File: C:\Users\liqui\Desktop\girlhype-project\app\api\auth\me\route.js
+// File: C:\Users\keleb\OneDrive\Documents\GitHub\girlhype-project\app\api\auth\me\route.js
 import * as entry from '../../../../../../app/api/auth/me/route.js'
 import type { NextRequest } from 'next/server.js'
 
