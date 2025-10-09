@@ -9,13 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "bcryptjs": "^2.4.3",
-    "js-cookie": "^3.0.5",
-    "jsonwebtoken": "^9.0.2",
-    "mongodb": "^6.3.0",
-    "next": "^14.2.32",
+    "next": "14.0.4",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "mongodb": "^6.3.0",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "js-cookie": "^3.0.5"
   },
   "devDependencies": {
     "eslint": "^8",

@@ -173,3 +173,28 @@ input, textarea {
     padding: 0 16px;
   }
 }
+
+/* Light mode (default) */
+body.light-mode {
+  background: #fff;
+  color: #000;
+}
+
+/* Dark mode */
+body.dark-mode {
+  background: #000;
+  color: #fff;
+}
+
+/* Example overrides */
+body.dark-mode .eventCard {
+  background: #222;
+  border-color: #ff69b4;
+  color: #fff;
+}
+
+body.dark-mode .friendsCard {
+  background: #222;
+  border: 1px solid #ff69b4;
+  color: #fff;
+}

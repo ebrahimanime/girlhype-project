@@ -1,8 +1,1 @@
-{
-  "/page": "app/page.js",
-  "/dashboard/page": "app/dashboard/page.js",
-  "/api/posts/route": "app/api/posts/route.js",
-  "/api/auth/me/route": "app/api/auth/me/route.js",
-  "/messages/page": "app/messages/page.js",
-  "/api/posts/[postId]/like/route": "app/api/posts/[postId]/like/route.js"
-}
+{}

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 // File: C:\Users\keleb\OneDrive\Documents\GitHub\girlhype-project\app\page.js
+=======
+// File: C:\Users\themb\OneDrive\Documents\GitHub\girlhype-project\app\page.js
+>>>>>>> 119115b1ed45454d070caf44d1dc1f13acc7dd26
 import * as entry from '../../../app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
