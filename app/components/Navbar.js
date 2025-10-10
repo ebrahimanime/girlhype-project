@@ -22,14 +22,6 @@ export default function Navbar({ user, darkMode, onToggleDarkMode, onToggleSideb
     onToggleDarkMode()
   }
 
-<<<<<<< HEAD
-  // ✅ Navigate to messages page
-  const handleMessagesClick = () => {
-    router.push('/messages')
-  }
-
-=======
->>>>>>> 119115b1ed45454d070caf44d1dc1f13acc7dd26
   return (
     <nav className={styles.navbar}>
       <div className={styles.navContent}>
@@ -70,18 +62,6 @@ export default function Navbar({ user, darkMode, onToggleDarkMode, onToggleSideb
 
         {/* Right Section */}
         <div className={styles.rightSection}>
-<<<<<<< HEAD
-          {/* ✅ Messages/DM Button */}
-          <button 
-            className={styles.messagesButton}
-            onClick={handleMessagesClick}
-            aria-label="Messages"
-          >
-            💬
-          </button>
-
-=======
->>>>>>> 119115b1ed45454d070caf44d1dc1f13acc7dd26
           {/* ✅ Dark/Light Button */}
           <button 
             className={styles.themeToggle}

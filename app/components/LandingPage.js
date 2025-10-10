@@ -54,7 +54,7 @@ export default function LandingPage() {
       <div className={styles.content}>
         <div className={styles.leftSide}>
           <div className={styles.logo}>
-            <h1>HypeChat</h1>
+            <h1>Girlhype</h1>
           </div>
           <p className={styles.tagline}>
             Connect with friends and the world around you on HypeChat.
