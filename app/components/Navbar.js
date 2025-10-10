@@ -1,3 +1,5 @@
+'use client'
+
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import styles from '../styles/Navbar.module.css'
@@ -22,6 +24,11 @@ export default function Navbar({ user, darkMode, onToggleDarkMode, onToggleSideb
     onToggleDarkMode()
   }
 
+  // ✅ Navigate to messages page
+  const handleMessagesClick = () => {
+    router.push('/messages')
+  }
+
   return (
     <nav className={styles.navbar}>
       <div className={styles.navContent}>
@@ -38,7 +45,7 @@ export default function Navbar({ user, darkMode, onToggleDarkMode, onToggleSideb
           </button>
           
           <div className={styles.logo} onClick={() => router.push('/dashboard')}>
-            <h2>HypeChat</h2>
+            <h2>Girlhype</h2>
           </div>
         </div>
 
@@ -62,6 +69,15 @@ export default function Navbar({ user, darkMode, onToggleDarkMode, onToggleSideb
 
         {/* Right Section */}
         <div className={styles.rightSection}>
+          {/* ✅ Messages/DM Button */}
+          <button 
+            className={styles.messagesButton}
+            onClick={handleMessagesClick}
+            aria-label="Messages"
+          >
+            💬
+          </button>
+
           {/* ✅ Dark/Light Button */}
           <button 
             className={styles.themeToggle}
