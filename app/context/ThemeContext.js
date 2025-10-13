@@ -1,32 +1,34 @@
 "use client";
-import { createContext, useContext, useState, useEffect } from "react";
 
-const ThemeContext = createContext();
+import { createContext, useState, useEffect } from "react";
 
+// 1. Create ThemeContext
+export const ThemeContext = createContext();
+
+// 2. ThemeProvider component
 export function ThemeProvider({ children }) {
-  const [darkMode, setDarkMode] = useState(false);
+  const [theme, setTheme] = useState("light");
 
+  // Load saved theme from localStorage
   useEffect(() => {
-    const stored = localStorage.getItem("darkMode");
-    if (stored) {
-      setDarkMode(JSON.parse(stored));
+    const saved = localStorage.getItem("theme");
+    if (saved) {
+      setTheme(saved);
     }
   }, []);
 
+  // Save theme whenever it changes
   useEffect(() => {
-    localStorage.setItem("darkMode", JSON.stringify(darkMode));
-    document.body.className = darkMode ? "dark-mode" : "light-mode";
-  }, [darkMode]);
+    localStorage.setItem("theme", theme);
+  }, [theme]);
 
-  const toggleDarkMode = () => setDarkMode((prev) => !prev);
+  const toggleTheme = () => {
+    setTheme(theme === "light" ? "dark" : "light");
+  };
 
   return (
-    <ThemeContext.Provider value={{ darkMode, toggleDarkMode }}>
+    <ThemeContext.Provider value={{ theme, toggleTheme }}>
       {children}
     </ThemeContext.Provider>
   );
-}
-
-export function useTheme() {
-  return useContext(ThemeContext);
 }
