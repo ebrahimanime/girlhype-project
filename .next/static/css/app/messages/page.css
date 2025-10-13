@@ -1,0 +1,456 @@
+/*!******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./app/styles/MessagesPage.module.css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************/
+.MessagesPage_messagesContainer__FmBTe {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-light);
+  color: var(--text-primary);
+}
+
+.MessagesPage_messagesHeader__ff2xX {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  background-color: var(--background-white);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.MessagesPage_backButton__YFVTq {
+  background: none;
+  border: none;
+  color: var(--primary-color);
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0.5rem 0;
+}
+
+.MessagesPage_backButton__YFVTq:hover {
+  opacity: 0.8;
+}
+
+.MessagesPage_messagesHeader__ff2xX h1 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.MessagesPage_headerInfo__he0me {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.MessagesPage_messagesContent__qHKcn {
+  display: flex;
+  flex: 1 1;
+  overflow: hidden;
+}
+
+/* Sidebar */
+.MessagesPage_sidebar__H9CXI {
+  width: 350px;
+  border-right: 1px solid var(--border-color);
+  background-color: var(--background-white);
+  display: flex;
+  flex-direction: column;
+}
+
+.MessagesPage_tabs__T68_5 {
+  display: flex;
+  border-bottom: 1px solid var(--border-color);
+  background-color: var(--background-white);
+}
+
+.MessagesPage_tab__6zqn2 {
+  flex: 1 1;
+  padding: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  color: var(--text-secondary);
+  transition: var(--transition);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.MessagesPage_tab__6zqn2:hover {
+  color: var(--text-primary);
+  background-color: var(--background-light);
+}
+
+.MessagesPage_activeTab__QuLti {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.MessagesPage_activeTab__QuLti::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: var(--primary-color);
+}
+
+.MessagesPage_badge__EUAtU {
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 10px;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  min-width: 18px;
+  text-align: center;
+}
+
+.MessagesPage_conversationsList__oDsVB {
+  flex: 1 1;
+  overflow-y: auto;
+}
+
+.MessagesPage_conversationItem__a6EMv,
+.MessagesPage_requestItem__wlbM_ {
+  display: flex;
+  align-items: flex-start;
+  padding: 1rem;
+  cursor: pointer;
+  border-bottom: 1px solid var(--border-color);
+  transition: var(--transition);
+  background-color: var(--background-white);
+  gap: 0.75rem;
+}
+
+.MessagesPage_conversationItem__a6EMv:hover,
+.MessagesPage_requestItem__wlbM_:hover {
+  background-color: var(--background-light);
+}
+
+.MessagesPage_conversationItem__a6EMv.MessagesPage_active__5VhR0 {
+  background-color: rgba(239, 30, 214, 0.05);
+  border-right: 2px solid var(--primary-color);
+}
+
+.MessagesPage_conversationItem__a6EMv.MessagesPage_unread__M8mf_ {
+  background-color: rgba(239, 30, 214, 0.02);
+}
+
+.MessagesPage_avatar__yzCla {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+
+.MessagesPage_onlineIndicator__0FSXQ {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #00d600;
+  border: 2px solid var(--background-white);
+}
+
+.MessagesPage_conversationDetails__ISY_K,
+.MessagesPage_requestDetails__I5a4Y {
+  flex: 1 1;
+  min-width: 0;
+}
+
+.MessagesPage_conversationHeader__ZWkop,
+.MessagesPage_requestHeader__zj0FD {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.25rem;
+}
+
+.MessagesPage_userName__VTe4v {
+  font-weight: 600;
+  color: var(--text-primary);
+  font-size: 0.9rem;
+}
+
+.MessagesPage_timestamp___Jxg8 {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.MessagesPage_lastMessage__aZlck {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.25rem;
+  line-height: 1.3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.MessagesPage_userStatus__J6c3_ {
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+}
+
+.MessagesPage_requestInfo__G_7Ra {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.MessagesPage_mutualFriends__Cb032 {
+  font-size: 0.7rem;
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.MessagesPage_requestActions__9AARz {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.MessagesPage_acceptButton__aXIdY,
+.MessagesPage_deleteButton__eHkmt {
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.MessagesPage_acceptButton__aXIdY {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.MessagesPage_acceptButton__aXIdY:hover {
+  background-color: var(--primary-hover);
+}
+
+.MessagesPage_deleteButton__eHkmt {
+  background-color: var(--border-color);
+  color: var(--text-primary);
+}
+
+.MessagesPage_deleteButton__eHkmt:hover {
+  background-color: var(--text-secondary);
+  color: var(--background-white);
+}
+
+.MessagesPage_unreadBadge__us3Lv {
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.MessagesPage_emptyState__fGhc5 {
+  padding: 2rem;
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+/* Chat Area */
+.MessagesPage_chatArea__BkcMC {
+  flex: 1 1;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-white);
+}
+
+.MessagesPage_chatHeader__KL9md {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+  background-color: var(--background-white);
+}
+
+.MessagesPage_chatUserInfo__IM_lm {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.MessagesPage_messagesList__Z3YxH {
+  flex: 1 1;
+  padding: 1rem 1.5rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  background-color: var(--background-light);
+}
+
+.MessagesPage_message__vpi26 {
+  display: flex;
+  max-width: 70%;
+  animation: MessagesPage_messageSlide__RnydP 0.2s ease-out;
+}
+
+@keyframes MessagesPage_messageSlide__RnydP {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.MessagesPage_received__3YFmq {
+  align-self: flex-start;
+}
+
+.MessagesPage_sent__3CxAS {
+  align-self: flex-end;
+}
+
+.MessagesPage_messageContent__Cebpw {
+  padding: 0.75rem 1rem;
+  border-radius: 1rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  word-wrap: break-word;
+}
+
+.MessagesPage_received__3YFmq .MessagesPage_messageContent__Cebpw {
+  background-color: var(--background-white);
+  color: var(--text-primary);
+  border-bottom-left-radius: 0.25rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.MessagesPage_sent__3CxAS .MessagesPage_messageContent__Cebpw {
+  background-color: var(--primary-color);
+  color: white;
+  border-bottom-right-radius: 0.25rem;
+}
+
+.MessagesPage_messageTime__b8mPJ {
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+  margin-top: 0.25rem;
+  text-align: right;
+}
+
+.MessagesPage_messageInputContainer__RgGES {
+  display: flex;
+  padding: 1rem 1.5rem;
+  gap: 0.75rem;
+  border-top: 1px solid var(--border-color);
+  background-color: var(--background-white);
+}
+
+.MessagesPage_messageInput__g6xJX {
+  flex: 1 1;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background-color: var(--background-white);
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  transition: var(--transition);
+}
+
+.MessagesPage_messageInput__g6xJX:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(239, 30, 214, 0.1);
+}
+
+.MessagesPage_sendButton__Dv4hR {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: var(--transition);
+  font-size: 0.9rem;
+}
+
+.MessagesPage_sendButton__Dv4hR:hover:not(:disabled) {
+  background-color: var(--primary-hover);
+  transform: translateY(-1px);
+}
+
+.MessagesPage_sendButton__Dv4hR:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.MessagesPage_noChatSelected__VKd70 {
+  flex: 1 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background-light);
+}
+
+.MessagesPage_placeholder__7zNh6 {
+  text-align: center;
+  color: var(--text-secondary);
+}
+
+.MessagesPage_placeholder__7zNh6 h3 {
+  margin: 0 0 0.5rem 0;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.MessagesPage_placeholder__7zNh6 p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Scrollbar */
+.MessagesPage_conversationsList__oDsVB::-webkit-scrollbar,
+.MessagesPage_messagesList__Z3YxH::-webkit-scrollbar {
+  width: 4px;
+}
+
+.MessagesPage_conversationsList__oDsVB::-webkit-scrollbar-track,
+.MessagesPage_messagesList__Z3YxH::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.MessagesPage_conversationsList__oDsVB::-webkit-scrollbar-thumb,
+.MessagesPage_messagesList__Z3YxH::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 2px;
+}
+
+.MessagesPage_conversationsList__oDsVB::-webkit-scrollbar-thumb:hover,
+.MessagesPage_messagesList__Z3YxH::-webkit-scrollbar-thumb:hover {
+  background: var(--text-secondary);
+}

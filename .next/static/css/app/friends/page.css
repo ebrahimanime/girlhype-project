@@ -1,0 +1,370 @@
+/*!*****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./app/styles/FriendsPage.module.css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************/
+.FriendsPage_friendsContainer__Q8r1e {
+  min-height: 100vh;
+  background-color: var(--background-light);
+  color: var(--text-primary);
+}
+
+/* Header */
+.FriendsPage_header__gt6gE {
+  padding: 1rem 1.5rem;
+  background-color: var(--background-white);
+  border-bottom: 1px solid var(--border-color);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.FriendsPage_headerLeft__lrdAC {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.FriendsPage_backButton__EeaKk {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  color: var(--text-primary);
+  border-radius: 8px;
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+
+.FriendsPage_backButton__EeaKk:hover {
+  background-color: var(--background-light);
+  color: var(--primary-color);
+}
+
+.FriendsPage_headerContent__HClAo h1 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.FriendsPage_stats__pgHID {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.FriendsPage_requestsCount__iruww {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+/* Tabs */
+.FriendsPage_tabs__X5yJf {
+  display: flex;
+  background-color: var(--background-white);
+  border-bottom: 1px solid var(--border-color);
+  padding: 0 1.5rem;
+}
+
+.FriendsPage_tab__EPj1k {
+  padding: 1rem 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  color: var(--text-secondary);
+  transition: var(--transition);
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.FriendsPage_tab__EPj1k:hover {
+  color: var(--text-primary);
+  background-color: var(--background-light);
+}
+
+.FriendsPage_activeTab__sqJNi {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.FriendsPage_activeTab__sqJNi::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: var(--primary-color);
+}
+
+.FriendsPage_badge__Pe_TG {
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 10px;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  min-width: 18px;
+  text-align: center;
+}
+
+/* Content */
+.FriendsPage_content__3Fiw0 {
+  padding: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.FriendsPage_section__EiJVI {
+  margin-bottom: 2rem;
+}
+
+.FriendsPage_sectionHeader__6fg_S {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding: 0 0.5rem;
+}
+
+.FriendsPage_sectionHeader__6fg_S h2 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.FriendsPage_count__vmURF {
+  background-color: var(--background-light);
+  color: var(--text-secondary);
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.FriendsPage_list__cYLNO {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Cards */
+.FriendsPage_card__YvcBa {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem;
+  background-color: var(--background-white);
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  transition: var(--transition);
+}
+
+.FriendsPage_card__YvcBa:hover {
+  border-color: var(--primary-color);
+  box-shadow: 0 2px 8px rgba(239, 30, 214, 0.1);
+}
+
+.FriendsPage_userInfo__YG2YQ {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 1 1;
+}
+
+.FriendsPage_avatar__Iac47 {
+  position: relative;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.FriendsPage_onlineIndicator__DI2sX {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #00d600;
+  border: 2px solid var(--background-white);
+}
+
+.FriendsPage_userDetails__3fMO0 {
+  flex: 1 1;
+}
+
+.FriendsPage_name__R4xFj {
+  margin: 0 0 0.1rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.FriendsPage_username__QeRvi {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.8rem;
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.FriendsPage_meta__vXESx {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.FriendsPage_mutual__wFTSH {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.FriendsPage_status__WgHRo,
+.FriendsPage_timestamp__aIIN5,
+.FriendsPage_bio__DqUcL {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.FriendsPage_bio__DqUcL {
+  font-style: italic;
+}
+
+.FriendsPage_actions__mjCeR {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.FriendsPage_primaryButton__qQMt6 {
+  padding: 0.5rem 1rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.8rem;
+  transition: var(--transition);
+  min-width: 80px;
+}
+
+.FriendsPage_primaryButton__qQMt6:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-1px);
+}
+
+.FriendsPage_secondaryButton__fhqEo {
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  color: var(--text-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.8rem;
+  transition: var(--transition);
+  min-width: 80px;
+}
+
+.FriendsPage_secondaryButton__fhqEo:hover {
+  background-color: var(--background-light);
+  color: var(--text-primary);
+}
+
+/* Empty States */
+.FriendsPage_emptyState__gCJdx {
+  text-align: center;
+  padding: 3rem 2rem;
+  color: var(--text-secondary);
+  background-color: var(--background-white);
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+}
+
+.FriendsPage_emptyState__gCJdx p {
+  margin: 0 0 1rem 0;
+  font-size: 0.9rem;
+}
+
+.FriendsPage_actionButton__YGaxY {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: var(--transition);
+}
+
+.FriendsPage_actionButton__YGaxY:hover {
+  background-color: var(--primary-hover);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .FriendsPage_header__gt6gE {
+    padding: 1rem;
+  }
+
+  .FriendsPage_tabs__X5yJf {
+    padding: 0 1rem;
+  }
+
+  .FriendsPage_tab__EPj1k {
+    padding: 1rem;
+    font-size: 0.85rem;
+  }
+
+  .FriendsPage_content__3Fiw0 {
+    padding: 1rem;
+  }
+
+  .FriendsPage_card__YvcBa {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .FriendsPage_actions__mjCeR {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .FriendsPage_primaryButton__qQMt6,
+  .FriendsPage_secondaryButton__fhqEo {
+    flex: 1 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .FriendsPage_userInfo__YG2YQ {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .FriendsPage_avatar__Iac47 {
+    align-self: flex-start;
+  }
+}
