@@ -1,8 +1,8 @@
-// File: C:\Users\keleb\OneDrive\Documents\GitHub\girlhype-project\app\friends\page.js
-import * as entry from '../../../../app/friends/page.js'
+// File: C:\Users\themb\OneDrive\Documents\GitHub\girlhype-project\app\events\page.js
+import * as entry from '../../../../app/events/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
-type TEntry = typeof import('../../../../app/friends/page.js')
+type TEntry = typeof import('../../../../app/events/page.js')
 
 // Check that the entry is a valid entry
 checkFields<Diff<{

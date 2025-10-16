@@ -198,3 +198,13 @@ body.dark-mode .friendsCard {
   border: 1px solid #ff69b4;
   color: #fff;
 }
+
+body.light-mode {
+  background-color: #fff;
+  color: #000;
+}
+
+body.dark-mode {
+  background-color: #111;
+  color: #fff;
+}

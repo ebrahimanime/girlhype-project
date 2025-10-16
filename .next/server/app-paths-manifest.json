@@ -1,8 +1,7 @@
 {
-  "/friends/page": "app/friends/page.js",
-  "/api/auth/me/route": "app/api/auth/me/route.js",
-  "/api/posts/route": "app/api/posts/route.js",
-  "/dashboard/page": "app/dashboard/page.js",
+  "/not-found": "app/not-found.js",
   "/page": "app/page.js",
-  "/messages/page": "app/messages/page.js"
+  "/dashboard/page": "app/dashboard/page.js",
+  "/events/page": "app/events/page.js",
+  "/api/events/route": "app/api/events/route.js"
 }

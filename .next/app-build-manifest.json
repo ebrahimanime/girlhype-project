@@ -18,17 +18,16 @@
       "static/css/app/dashboard/page.css",
       "static/chunks/app/dashboard/page.js"
     ],
-    "/friends/page": [
+    "/events/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/friends/page.css",
-      "static/chunks/app/friends/page.js"
+      "static/css/app/events/page.css",
+      "static/chunks/app/events/page.js"
     ],
-    "/messages/page": [
+    "/not-found": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/messages/page.css",
-      "static/chunks/app/messages/page.js"
+      "static/chunks/app/not-found.js"
     ]
   }
 }

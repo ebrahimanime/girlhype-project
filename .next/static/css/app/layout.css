@@ -1,5 +1,5 @@
 /*!*************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./app/globals.css ***!
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./app/globals.css ***!
   \*************************************************************************************************************************************************************************************************************************************************************/
 * {
   box-sizing: border-box;
@@ -199,6 +199,16 @@ body.dark-mode .eventCard {
 body.dark-mode .friendsCard {
   background: #222;
   border: 1px solid #ff69b4;
+  color: #fff;
+}
+
+body.light-mode {
+  background-color: #fff;
+  color: #000;
+}
+
+body.dark-mode {
+  background-color: #111;
   color: #fff;
 }
 
