@@ -14,7 +14,7 @@ export default function Profile() {
 
   useEffect(() => {
     fetchUserData()
-    
+   
     const savedTheme = localStorage.getItem('theme')
     if (savedTheme === 'dark') {
       setDarkMode(true)
@@ -52,7 +52,7 @@ export default function Profile() {
   const toggleDarkMode = () => {
     const newDarkMode = !darkMode
     setDarkMode(newDarkMode)
-    
+   
     if (newDarkMode) {
       document.documentElement.setAttribute('data-theme', 'dark')
       localStorage.setItem('theme', 'dark')
@@ -67,6 +67,10 @@ export default function Profile() {
     router.push('/')
   }
 
+  const handleEditProfile = () => {
+    router.push('/editprofile')
+  }
+
   if (loading) {
     return (
       <div className={styles.loading}>
@@ -78,25 +82,25 @@ export default function Profile() {
 
   return (
     <div className={styles.profilePage}>
-      <Navbar 
+      <Navbar
         user={user}
         darkMode={darkMode}
         onToggleDarkMode={toggleDarkMode}
         onLogout={handleLogout}
       />
-      
+     
       <div className={styles.profileContent}>
         <div className={styles.coverPhoto}>
           <div className={styles.coverGradient}></div>
         </div>
-        
+       
         <div className={styles.profileHeader}>
           <div className={styles.profileAvatar}>
             <div className={styles.avatar}>
               {user?.name?.charAt(0).toUpperCase()}
             </div>
           </div>
-          
+         
           <div className={styles.profileInfo}>
             <h1 className={styles.profileName}>{user?.name}</h1>
             <p className={styles.profileEmail}>{user?.email}</p>
@@ -107,23 +111,27 @@ export default function Profile() {
               })}
             </p>
           </div>
-          
+         
           <div className={styles.profileActions}>
-            <button className="btn btn-primary">Edit Profile</button>
-            <button className="btn btn-outline">Settings</button>
+            <button className="btn btn-primary" onClick={handleEditProfile}>
+              Edit Profile
+            </button>
+            <button className="btn btn-outline">
+              Settings
+            </button>
           </div>
         </div>
-        
+       
         <div className={styles.profileTabs}>
           <button className={`${styles.tab} ${styles.activeTab}`}>Posts</button>
           <button className={styles.tab}>About</button>
           <button className={styles.tab}>Friends</button>
           <button className={styles.tab}>Photos</button>
         </div>
-        
+       
         <div className={styles.profileBody}>
           <div className={styles.profileSidebar}>
-            <div className="card" style={{ padding: '20px' }}>
+            <div className={styles.aboutCard}>
               <h3>About</h3>
               <div className={styles.aboutItem}>
                 <span className={styles.aboutIcon}>📧</span>
@@ -135,11 +143,11 @@ export default function Profile() {
               </div>
             </div>
           </div>
-          
+         
           <div className={styles.profileMain}>
-            <div className="card" style={{ padding: '20px', textAlign: 'center' }}>
+            <div className={styles.postsCard}>
               <h3>Your Posts</h3>
-              <p style={{ color: 'var(--text-secondary)', marginTop: '10px' }}>
+              <p className={styles.noPostsText}>
                 Your posts will appear here
               </p>
             </div>
