@@ -1,8 +1,6 @@
 {
   "/page": "app/page.js",
   "/dashboard/page": "app/dashboard/page.js",
-  "/api/auth/me/route": "app/api/auth/me/route.js",
-  "/messages/page": "app/messages/page.js",
-  "/api/posts/route": "app/api/posts/route.js",
-  "/friends/page": "app/friends/page.js"
+  "/profile/page": "app/profile/page.js",
+  "/messages/page": "app/messages/page.js"
 }
