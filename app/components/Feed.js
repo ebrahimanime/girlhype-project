@@ -26,32 +26,25 @@ export default function Feed({ user }) {
 
       if (res.ok) {
         const data = await res.json()
-        setPosts(data.posts)
+        // ✅ Ensure posts is always an array
+        setPosts(Array.isArray(data.posts) ? data.posts : [])
       } else {
         setError('Failed to fetch posts')
+        setPosts([])
       }
     } catch (error) {
+      console.error('Fetch posts error:', error)
       setError('Failed to fetch posts')
+      setPosts([])
     } finally {
       setLoading(false)
     }
   }
 
-  const handlePostCreated = () => {
-    fetchPosts()
-  }
-
-  const handlePostDeleted = () => {
-    fetchPosts()
-  }
-
-  const handlePostLiked = () => {
-    fetchPosts()
-  }
-
-  const handleCommentAdded = () => {
-    fetchPosts()
-  }
+  const handlePostCreated = () => fetchPosts()
+  const handlePostDeleted = () => fetchPosts()
+  const handlePostLiked = () => fetchPosts()
+  const handleCommentAdded = () => fetchPosts()
 
   if (loading) {
     return (
@@ -67,10 +60,9 @@ export default function Feed({ user }) {
       <CreatePost user={user} onPostCreated={handlePostCreated} />
       
       {error && <div className="error">{error}</div>}
-      
-      
+
       <div className={styles.posts}>
-        {posts.length === 0 ? (
+        {!Array.isArray(posts) || posts.length === 0 ? (
           <div className={styles.noPosts}>
             <h3>No posts yet</h3>
             <p>Be the first to share something!</p>
