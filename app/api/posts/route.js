@@ -1,150 +1,47 @@
-import clientPromise from '../../lib/mongodb'
-import { verifyToken } from '../../lib/auth'
-import { ObjectId } from 'mongodb'
-import { NextResponse } from 'next/server'
+import { NextResponse } from "next/server";
+import connectMongoDB from "../../../lib/mongodb";
+import Post from "../../models/Post"; // ✅ Correct path (models is inside app/)
 
-export async function GET(request) {
+export async function GET() {
   try {
-    const authHeader = request.headers.get('authorization')
-    const token = authHeader?.split(' ')[1]
-    
-    if (!token) {
-      return NextResponse.json(
-        { message: 'No token provided' },
-        { status: 401 }
-      )
-    }
-
-    const decoded = verifyToken(token)
-    if (!decoded) {
-      return NextResponse.json(
-        { message: 'Invalid token' },
-        { status: 401 }
-      )
-    }
-
-    const client = await clientPromise
-    const db = client.db('socialbook')
-    const posts = db.collection('posts')
-
-    const allPosts = await posts.aggregate([
-      {
-        $lookup: {
-          from: 'users',
-          localField: 'authorId',
-          foreignField: '_id',
-          as: 'author'
-        }
-      },
-      {
-        $lookup: {
-          from: 'users',
-          localField: 'comments.authorId',
-          foreignField: '_id',
-          as: 'commentAuthors'
-        }
-      },
-      {
-        $addFields: {
-          author: { $arrayElemAt: ['$author', 0] },
-          comments: {
-            $map: {
-              input: '$comments',
-              as: 'comment',
-              in: {
-                content: '$$comment.content',
-                createdAt: '$$comment.createdAt',
-                author: {
-                  $arrayElemAt: [
-                    {
-                      $filter: {
-                        input: '$commentAuthors',
-                        cond: { $eq: ['$$this._id', '$$comment.authorId'] }
-                      }
-                    },
-                    0
-                  ]
-                }
-              }
-            }
-          }
-        }
-      },
-      {
-        $project: {
-          content: 1,
-          createdAt: 1,
-          likes: 1,
-          comments: 1,
-          'author.name': 1,
-          'author._id': 1
-        }
-      },
-      { $sort: { createdAt: -1 } }
-    ]).toArray()
-
-    return NextResponse.json({ posts: allPosts }, { status: 200 })
+    await connectMongoDB();
+    const posts = await Post.find();
+    return NextResponse.json(posts);
   } catch (error) {
-    console.error('Fetch posts error:', error)
+    console.error("GET posts error:", error);
     return NextResponse.json(
-      { message: 'Internal server error' },
+      { message: "Error fetching posts", error: error.message },
       { status: 500 }
-    )
+    );
   }
 }
 
-export async function POST(request) {
+export async function POST(req) {
   try {
-    const authHeader = request.headers.get('authorization')
-    const token = authHeader?.split(' ')[1]
-    
-    if (!token) {
-      return NextResponse.json(
-        { message: 'No token provided' },
-        { status: 401 }
-      )
-    }
-
-    const decoded = verifyToken(token)
-    if (!decoded) {
-      return NextResponse.json(
-        { message: 'Invalid token' },
-        { status: 401 }
-      )
-    }
-
-    const { content } = await request.json()
-
-    if (!content || !content.trim()) {
-      return NextResponse.json(
-        { message: 'Post content is required' },
-        { status: 400 }
-      )
-    }
-
-    const client = await clientPromise
-    const db = client.db('socialbook')
-    const posts = db.collection('posts')
-
-    const newPost = {
-      content: content.trim(),
-      authorId: new ObjectId(decoded.userId),
-      likes: [],
-      comments: [],
-      createdAt: new Date()
-    }
-
-    const result = await posts.insertOne(newPost)
-    
-    return NextResponse.json(
-      { message: 'Post created successfully', postId: result.insertedId },
-      { status: 201 }
-    )
+    const { userId, content, image } = await req.json();
+    await connectMongoDB();
+    const post = await Post.create({ userId, content, image });
+    return NextResponse.json({ message: "Post created", post }, { status: 201 });
   } catch (error) {
-    console.error('Create post error:', error)
+    console.error("POST posts error:", error);
     return NextResponse.json(
-      { message: 'Internal server error' },
+      { message: "Error creating post", error: error.message },
       { status: 500 }
-    )
+    );
+  }
+}
+
+export async function DELETE(req) {
+  try {
+    const { id } = await req.json();
+    await connectMongoDB();
+    await Post.findByIdAndDelete(id);
+    return NextResponse.json({ message: "Post deleted" });
+  } catch (error) {
+    console.error("DELETE posts error:", error);
+    return NextResponse.json(
+      { message: "Error deleting post", error: error.message },
+      { status: 500 }
+    );
   }
 }
