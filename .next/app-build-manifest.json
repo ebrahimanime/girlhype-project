@@ -18,11 +18,17 @@
       "static/css/app/dashboard/page.css",
       "static/chunks/app/dashboard/page.js"
     ],
-    "/events/page": [
+    "/groups/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/events/page.css",
-      "static/chunks/app/events/page.js"
+      "static/css/app/groups/page.css",
+      "static/chunks/app/groups/page.js"
+    ],
+    "/notes/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/notes/page.css",
+      "static/chunks/app/notes/page.js"
     ],
     "/not-found": [
       "static/chunks/webpack.js",
