@@ -15,7 +15,7 @@ export default function Sidebar({ collapsed, user }) {
     
     // { icon: '📺', label: 'Watch', path: '/watch' },
     { icon: '📅', label: 'Events', path: '/events' },
-    { icon: '💾', label: 'Saved', path: '/saved' },
+    { icon: '💾', label: 'Saved Notes', path: '/notes' },
   ]
 
   return (
